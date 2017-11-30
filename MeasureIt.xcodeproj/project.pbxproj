@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DE7FE7A896F84D4F757F8E0 /* Pods_MeasureIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE11D0CC24FD678FCFE07149 /* Pods_MeasureIt.framework */; };
 		8408FF011FD00B8E00F9BEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FF001FD00B8E00F9BEDE /* AppDelegate.swift */; };
 		8408FF031FD00B8E00F9BEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FF021FD00B8E00F9BEDE /* ViewController.swift */; };
 		8408FF061FD00B8E00F9BEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408FF041FD00B8E00F9BEDE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D31933C1985B83882640DDF /* Pods-MeasureIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeasureIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeasureIt/Pods-MeasureIt.release.xcconfig"; sourceTree = "<group>"; };
 		8408FEFD1FD00B8E00F9BEDE /* MeasureIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeasureIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8408FF001FD00B8E00F9BEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8408FF021FD00B8E00F9BEDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8408FF071FD00B8E00F9BEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8408FF0A1FD00B8E00F9BEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8408FF0C1FD00B8E00F9BEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91D3F52E35E59565782E5DCA /* Pods-MeasureIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeasureIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeasureIt/Pods-MeasureIt.debug.xcconfig"; sourceTree = "<group>"; };
+		FE11D0CC24FD678FCFE07149 /* Pods_MeasureIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeasureIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE7FE7A896F84D4F757F8E0 /* Pods_MeasureIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D3FD347798F8CB2B0630406 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91D3F52E35E59565782E5DCA /* Pods-MeasureIt.debug.xcconfig */,
+				5D31933C1985B83882640DDF /* Pods-MeasureIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8408FEF41FD00B8E00F9BEDE = {
 			isa = PBXGroup;
 			children = (
 				8408FEFF1FD00B8E00F9BEDE /* MeasureIt */,
 				8408FEFE1FD00B8E00F9BEDE /* Products */,
+				6D3FD347798F8CB2B0630406 /* Pods */,
+				A0BBA727F6D29C4A9FA882D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = MeasureIt;
 			sourceTree = "<group>";
 		};
+		A0BBA727F6D29C4A9FA882D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE11D0CC24FD678FCFE07149 /* Pods_MeasureIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8408FF0F1FD00B8E00F9BEDE /* Build configuration list for PBXNativeTarget "MeasureIt" */;
 			buildPhases = (
+				937D7A6ADB6C016F8C7197F2 /* [CP] Check Pods Manifest.lock */,
 				8408FEF91FD00B8E00F9BEDE /* Sources */,
 				8408FEFA1FD00B8E00F9BEDE /* Frameworks */,
 				8408FEFB1FD00B8E00F9BEDE /* Resources */,
+				9B16508BB80C959E51D2E7F0 /* [CP] Embed Pods Frameworks */,
+				0323A0E8E94ABE293D165AC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0323A0E8E94ABE293D165AC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeasureIt/Pods-MeasureIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		937D7A6ADB6C016F8C7197F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeasureIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B16508BB80C959E51D2E7F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MeasureIt/Pods-MeasureIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PusherSwift/PusherSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PusherSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeasureIt/Pods-MeasureIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8408FEF91FD00B8E00F9BEDE /* Sources */ = {
@@ -272,9 +353,11 @@
 		};
 		8408FF101FD00B8E00F9BEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D3F52E35E59565782E5DCA /* Pods-MeasureIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
 				INFOPLIST_FILE = MeasureIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panacloud.MeasureIt;
@@ -286,9 +369,11 @@
 		};
 		8408FF111FD00B8E00F9BEDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D31933C1985B83882640DDF /* Pods-MeasureIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
 				INFOPLIST_FILE = MeasureIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panacloud.MeasureIt;
